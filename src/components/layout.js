@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-import PageTransition from 'gatsby-plugin-page-transitions';
+// import PageTransition from 'gatsby-plugin-page-transitions';
 
 import Header from './header'
 import Footer from './footer'
@@ -22,13 +22,13 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <PageTransition>
+        {/* <PageTransition> */}
         <Header siteBrand={ data.site.siteMetadata.brand } />
         <article>
           {children}
         </article>
         <Footer />
-        </PageTransition>
+        {/* </PageTransition> */}
       </>
     )}
   />

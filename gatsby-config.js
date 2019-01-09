@@ -38,30 +38,30 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-sass",
+      resolve: `gatsby-plugin-sass`,
     },
+    // {
+    //   resolve: `gatsby-plugin-page-transitions`,
+    //   options: {
+    //     transitionTime: 500,
+    //     // defaultStyle: {
+    //     //   transition: 'left 500ms cubic-bezier(0.47, 0, 0.75, 0.72)',
+    //     //   left: '100%',
+    //     //   position: 'absolute',
+    //     //   width: '100%',
+    //     // },
+    //     // transitionStyles:{
+    //     //   entering: { left: '0%' },
+    //     //   entered: { left: '0%' },
+    //     //   exiting: { left: '100%' },
+    //     // }
+    //   }
+    // },
     {
-      resolve: 'gatsby-plugin-page-transitions',
-      options: {
-        transitionTime: 500,
-        // defaultStyle: {
-        //   transition: 'left 500ms cubic-bezier(0.47, 0, 0.75, 0.72)',
-        //   left: '100%',
-        //   position: 'absolute',
-        //   width: '100%',
-        // },
-        // transitionStyles:{
-        //   entering: { left: '0%' },
-        //   entered: { left: '0%' },
-        //   exiting: { left: '100%' },
-        // }
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: ['Roboto:100', 'Roboto Slab:100', 'Assistant:200']
+          families: [`Roboto:100`, `Roboto Slab:100`, `Assistant:200`]
         }
       }
     },
@@ -81,6 +81,8 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    'gatsby-plugin-offline',
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify-cache`,
+    `gatsby-plugin-netlify`,
   ],
 }
