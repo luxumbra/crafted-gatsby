@@ -1,0 +1,51 @@
+// site layout
+html,
+body {
+    background-color: #00444c;
+    background: radial-gradient(ellipse at center, #00444c 1%,#001f23 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    margin:  0;
+
+    section {
+        grid-area: body;
+    }
+    aside {
+        grid-area: sidebar;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 2fr minmax(250px, 8fr) 2fr;
+        // grid-template-rows: 1fr;
+        grid-template-areas:
+            "... body ...";
+        min-height: 100vh - 10vh;
+    }
+    section {
+        display: grid;
+        align-content: center;
+        height: (100vh - 20vh);
+        max-height: 100%;
+        // padding-top: 8vh;
+
+        &#home {
+            // grid-template-columns: auto 60% auto;
+            text-align: center;
+        }
+        &#projects {
+            // grid-template-columns: 1fr 1fr 1fr;
+            align-content: flex-start;
+            padding-bottom: 10vh;
+        }
+
+
+        div {
+            // max-width: 1140px;
+            // width: 70%;
+        }
+    }
+}

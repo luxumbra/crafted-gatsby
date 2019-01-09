@@ -1,0 +1,30 @@
+@import './style/variables.scss';
+
+article + footer {
+    background: rgba($white, 0.85);
+    position: fixed;
+    bottom: 0;
+    height: 10vh;
+    width: 100vw;
+    color: $mainColor;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.6);
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        // flex-direction: row;
+
+        a {
+            color: $mainColorLink;
+            text-decoration: none;
+            &:hover {
+                color: $accentColorLink;
+            }
+        }
+    }
+}
