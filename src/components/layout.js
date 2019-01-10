@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 // import PageTransition from 'gatsby-plugin-page-transitions';
 
 import Header from './header'
@@ -23,6 +24,9 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         {/* <PageTransition> */}
+        <Helmet>
+          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        </Helmet>
         <Header siteBrand={ data.site.siteMetadata.brand } />
         <article>
           {children}
