@@ -1,5 +1,4 @@
 ---
-layout: blog
 title: Cycling News
 date: 2019-01-11T00:10:50.113Z
 thumbnail: /images/uploads/images.jpeg
