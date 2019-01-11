@@ -1,5 +1,5 @@
 ---
-title: ArchaeoApp
+title: ArchaeoApp!
 date: 2018-01-7
 uri: 'https://archaeoapp.crafted.im'
 role: '100% concept, design, development and DevOps.'
