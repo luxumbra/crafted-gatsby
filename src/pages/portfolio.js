@@ -9,10 +9,10 @@ import ProjectSummary from '../components/projects/ProjectSummary'
 const PortfolioPage = ({ data }) => (
   <Layout>
     <SEO title="Portfolio" description="Projects by Crafted" keywords={[`gatsby`, `application`, `react`]} />
-{/*
+
     {data.allMarkdownRemark.edges.map(project => (
       <ProjectSummary project={project} />
-    ))} */}
+    ))}
   </Layout>
 )
 
