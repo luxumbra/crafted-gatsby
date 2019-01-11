@@ -6,6 +6,6 @@ uri: 'http://cyclingnews.com'
 role: I was Senior Front-end developer
 client: Future Publishing
 technology: 'HTML, CSS, PHP'
-highlights: 'Working on a huge, business critical project'
+highlights: 'Working on a huge, business critical project!'
 ---
 Some body text
