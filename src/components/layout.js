@@ -8,6 +8,7 @@ import Header from './header'
 import Footer from './footer'
 
 import './layout.scss'
+import './style/theme.scss'
 
 const Layout = ({ children }) => (
   <StaticQuery

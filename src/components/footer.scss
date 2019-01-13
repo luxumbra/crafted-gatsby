@@ -18,13 +18,5 @@ article + footer {
         margin: 0;
         padding: 0;
         // flex-direction: row;
-
-        a {
-            color: $mainColorLink;
-            text-decoration: none;
-            &:hover {
-                color: $accentColorLink;
-            }
-        }
     }
 }

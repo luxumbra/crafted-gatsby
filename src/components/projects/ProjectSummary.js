@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import './ProjectSummary.scss'
+
 const ProjectSummary = ({ project }) => {
   return (
-    <div key={project.node.id}>
+    <div key={project.node.id} className="project-summary">
       {/* <img src="./img/cyn-screen.jpg" alt="" class="project-thumb" /> */}
       <h3><Link to={ project.node.frontmatter.uri }>{ project.node.frontmatter.title }</Link></h3>
       { project.node.excerpt }

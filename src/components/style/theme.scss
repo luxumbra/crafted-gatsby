@@ -1,0 +1,66 @@
+@import './variables.scss';
+
+body {
+  color: $white;
+}
+nav {
+  a {
+    color: $navLink;
+
+    &:hover {
+      color: $navLinkHover;
+    }
+  }
+}
+h1,
+h2,
+h3 {
+  color: $white;
+
+  a {
+    color: $accentLink;
+  }
+}
+a {
+  color: $mainLink;
+  text-decoration: none;
+  transition: color 0.4s ease-in-out;
+
+  &:hover {
+    color: $mainLinkHover;
+  }
+}
+
+footer {
+  a {
+    color: $mainColor;
+
+    &:hover {
+      color: $accentLink;
+    }
+  }
+}
+/** Mixins **/
+
+// Breakpoints
+@mixin bp($point) {
+  @if $point == superbike {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == supersport {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == superstock {
+    @media (max-width: 600px)  { @content; }
+  }
+  @else if $point == lightweight {
+    @media (max-width: 600px)  { @content; }
+  }
+}
+@mixin bodyProperties {
+  background-color: #00444c;
+  background: radial-gradient(ellipse at center, #00444c 1%,#001f23 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+}

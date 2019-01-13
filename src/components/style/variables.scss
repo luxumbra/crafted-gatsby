@@ -1,7 +1,14 @@
 $white: #fff;
-$whiteLink: rgba($white, 0.7);
 $mainColor: #00444c;
 $mainColorDark: #001f23;
-$mainColorLink: rgba($mainColor, 0.9);
 $accentColor: #cf142b;
-$accentColorLink: rgba($accentColor, 0.9);
+$linkO: 0.9; // anchor opacity
+$hoverO: 0.7; // :hover opacity
+
+$mainCopyColor: $white;
+$mainLink: rgba($white, $linkO);
+$mainLinkHover: rgba($white, $hoverO);
+$accentLink: rgba($accentColor, $linkO);
+$accentLinkHover: rgba($accentColor, $hoverO);
+$navLink: $mainLink;
+$navLinkHover: $accentLinkHover;
