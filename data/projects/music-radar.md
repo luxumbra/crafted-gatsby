@@ -8,4 +8,4 @@ client: Future
 technology: The usual
 highlights: Many
 ---
-Test
+lipsum
