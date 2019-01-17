@@ -10,6 +10,8 @@ import Footer from './footer'
 import './layout.scss'
 import './style/theme.scss'
 
+const feather = require('feather-icons')
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -25,18 +27,21 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         {/* <PageTransition> */}
+
         <Helmet>
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+          { feather.replace() }
         </Helmet>
         <Header siteBrand={ data.site.siteMetadata.brand } />
-        <article>
+        <div id="content" className="wrapper grid">
           {children}
-        </article>
+        </div>
         <Footer />
         {/* </PageTransition> */}
       </>
     )}
   />
+
 )
 
 Layout.propTypes = {

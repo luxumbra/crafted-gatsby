@@ -68,6 +68,9 @@ module.exports = {
     `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: [`${__dirname}/node_modules`],
+      },
     },
     // {
     //   resolve: `gatsby-plugin-page-transitions`,

@@ -3,12 +3,48 @@ $mainColor: #00444c;
 $mainColorDark: #001f23;
 $accentColor: #cf142b;
 $linkO: 0.9; // anchor opacity
-$hoverO: 0.7; // :hover opacity
+$hoverO: 0.6; // :hover opacity
 
 $mainCopyColor: $white;
 $mainLink: rgba($white, $linkO);
-$mainLinkHover: rgba($white, $hoverO);
 $accentLink: rgba($accentColor, $linkO);
+$mainLinkHover: rgba($accentLink, $hoverO);
 $accentLinkHover: rgba($accentColor, $hoverO);
 $navLink: $mainLink;
 $navLinkHover: $accentLinkHover;
+
+$bodyFont: 'Ubuntu', sans-serif;
+$heading2Font: 'Assistant', sans-serif;
+$leaderFont: 'Roboto', sans-serif;
+
+$headerHeight: 10vh;
+$footerHeight: 10vh;
+
+
+/** Mixins **/
+
+// Breakpoints
+@mixin bp($point) {
+  @if $point == motogp {
+    @media  only screen and (min-width : 1200px) { @content; }
+  }
+  @if $point == superbike {
+    @media only screen and (min-width : 992px) { @content; }
+  }
+  @else if $point == supersport {
+    @media only screen and (min-width : 768px) { @content; }
+  }
+  @else if $point == superstock {
+    @media only screen and (min-width : 480px)  { @content; }
+  }
+  @else if $point == lightweight {
+    @media only screen and (min-width : 320px)  { @content; }
+  }
+}
+@mixin bodyProperties {
+  background-color: #00444c;
+  background: radial-gradient(ellipse at center, #00444c 1%,#001f23 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+}

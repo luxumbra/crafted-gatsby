@@ -7,9 +7,9 @@ import Nav from './nav'
 import './header.scss'
 
 const Header = ({ siteBrand }) => (
-  <header>
+  // <header>
     <Nav brandName={ siteBrand } />
-  </header>
+  // </header>
 )
 
 Header.propTypes = {

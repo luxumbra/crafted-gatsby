@@ -8,13 +8,41 @@ import SEO from '../components/seo'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" description="Crafted starter" keywords={[`gatsby`, `application`, `react`]} />
-    <h2>Crafted!</h2>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/about/">Go to page 2</Link>
+    <section id="home">
+      <div class="row intro pb-md-3 pb-lg-3 pb-0">
+        <div class="col col-12">
+            <img src="./img/logo.png" />
+        </div>
+        </div>
+        <div class="row intro pb-2 pb-md-3">
+            <div class="col col-12">
+                {/* <!-- <h1 class="display-1">crafted</h1> --> */}
+                <span id="typed" class="lead typed-fade-out"></span>
+                {/* <!-- <p>Hand crafted websites made in the Isle of Man</p> --> */}
+            </div>
+        </div>
+
+        <div class="row precis p-3 pt-4 p-md-5">
+            <div class="col-12 col-md-12">
+                <blockquote cite="https://www.linkedin.com/in/stefankruger">
+                    Dave was a rock - dependable, self-motivated and crucially a calm and patient mentor for less experienced team members. Dave has a passion and pride in doing the right thing, and not just what is expedient and this had a real impact on the quality of the products we were building.
+                    <footer>
+                        - <cite>Stefan Kruger, Dev team manager @ Future Publishing</cite>
+                    </footer>
+                    {/* <p>It's not about making something that meets expectations. <br>
+                    It's about <em>making</em> something that <em>changes</em> them.</p>
+                    <footer>
+                        - <cite>Todd Carmichael</cite>
+                    </footer> */}
+                </blockquote>
+            </div>
+        </div>
+        <div class="row p-2 next-section">
+            <div class="col col-12">
+                <a data-scroll href="#about" class="btn primary-btn pulse" title="More arrow" aria-hidden="true"><span class=""></span></a>
+            </div>
+        </div>
+    </section>
   </Layout>
 )
 
