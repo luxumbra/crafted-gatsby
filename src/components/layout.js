@@ -28,6 +28,7 @@ const Layout = ({ children }) => (
 
         <Helmet>
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
         </Helmet>
         <Header siteBrand={ data.site.siteMetadata.brand } />
         <div id="content" className="wrapper grid">
