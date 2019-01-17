@@ -9,21 +9,21 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" description="Crafted starter" keywords={[`gatsby`, `application`, `react`]} />
     <section id="home">
-      <div class="row intro pb-md-3 pb-lg-3 pb-0">
-        <div class="col col-12">
+      <div className="row intro pb-md-3 pb-lg-3 pb-0">
+        <div className="col col-12">
             <img src="./img/logo.png" />
         </div>
         </div>
-        <div class="row intro pb-2 pb-md-3">
-            <div class="col col-12">
-                {/* <!-- <h1 class="display-1">crafted</h1> --> */}
-                <span id="typed" class="lead typed-fade-out"></span>
+        <div className="row intro pb-2 pb-md-3">
+            <div className="col col-12">
+                {/* <!-- <h1 className="display-1">crafted</h1> --> */}
+                <span id="typed" className="lead typed-fade-out"></span>
                 {/* <!-- <p>Hand crafted websites made in the Isle of Man</p> --> */}
             </div>
         </div>
 
-        <div class="row precis p-3 pt-4 p-md-5">
-            <div class="col-12 col-md-12">
+        <div className="row precis p-3 pt-4 p-md-5">
+            <div className="col-12 col-md-12">
                 <blockquote cite="https://www.linkedin.com/in/stefankruger">
                     Dave was a rock - dependable, self-motivated and crucially a calm and patient mentor for less experienced team members. Dave has a passion and pride in doing the right thing, and not just what is expedient and this had a real impact on the quality of the products we were building.
                     <footer>
@@ -37,9 +37,9 @@ const IndexPage = () => (
                 </blockquote>
             </div>
         </div>
-        <div class="row p-2 next-section">
-            <div class="col col-12">
-                <a data-scroll href="#about" class="btn primary-btn pulse" title="More arrow" aria-hidden="true"><span class=""></span></a>
+        <div className="row p-2 next-section">
+            <div className="col col-12">
+                <a data-scroll href="#about" className="btn primary-btn pulse" title="More arrow" aria-hidden="true"><span className=""></span></a>
             </div>
         </div>
     </section>
