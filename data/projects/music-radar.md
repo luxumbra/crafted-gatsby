@@ -8,4 +8,4 @@ client: Future
 technology: The usual
 highlights: Many
 ---
-lipsum
+A complete build from scratch of Future Plc music related website MusicRadar.
