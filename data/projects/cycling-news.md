@@ -8,4 +8,4 @@ client: Future Publishing
 technology: 'HTML, CSS, PHP'
 highlights: 'Working on a huge, business critical project!'
 ---
-Some body text
+A complete rebuild and content migration of the largest cycling news website in the world. Rebuilt from the ground up.
