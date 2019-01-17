@@ -9,4 +9,4 @@ highlights: Working with React!
 ---
 ### ArchaeoApp
 
-300% concept, design, development and DevOps handled by myself. Currently in development, this is a SPA (Single Page App) being built with _React_, _Bootstrap_ and _Firebase_. The site is currently hosted with Firebase Hosting.
+300% concept, design, development and DevOps handled by myself. Currently in development, this is a PWA (Progressive Web App) being built with _React_, _Bootstrap_ and _Firebase_. The site is currently hosted with Firebase Hosting.
