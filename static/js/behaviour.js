@@ -54,7 +54,6 @@ ScrollReveal().reveal(".project-summary", srRevealSlow);
 // ScrollReveal().reveal("#content + footer", srRevealSlooooow);
 
 const content = document.getElementById("content")
-console.log('Content: ', content)
 
 const navbar = document.getElementById("nav")
 const sticky = content.offsetTop
