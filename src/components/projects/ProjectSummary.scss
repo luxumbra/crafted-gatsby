@@ -62,18 +62,33 @@
   li {
       text-align: left;
   }
+  p {
+    @include leaderP;
+
+    @include bp(supersport) {
+        @include leaderP(1rem)
+    }
+    @include bp(superbike) {
+        @include leaderP(1.1rem)
+    }
+  }
   ul {
       list-style: none;
       padding-left:  0;
       margin-left: 0;
   }
   li {
-      font-size: 1.1rem;
-      font-family: 'Roboto', sans-serif;
-      margin-left:  0;
-      display: flex;
-      justify-content: start;
-      padding: 0 0 1.5rem;
+    @include listItem;
+    display: flex;
+    justify-content: start;
+
+    @include bp(supersport) {
+        @include listItem(1rem)
+    }
+    @include bp(superbike) {
+        @include listItem(1.1rem)
+    }
+
   }
   li svg {
       min-width: 4rem;

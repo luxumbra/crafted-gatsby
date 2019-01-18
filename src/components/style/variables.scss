@@ -23,6 +23,18 @@ $footerHeight: 10vh;
 
 /** Mixins **/
 
+@mixin leaderP($size: 0.9rem) {
+  font-family: $bodyFont;
+  font-size: $size;
+  font-weight: 200;
+};
+
+@mixin listItem($size: 0.9rem) {
+  font-family: $leaderFont;
+  font-size: $size;
+  margin-left:  0;
+  padding: 0 0 1rem;
+}
 // Breakpoints
 @mixin bp($point) {
   @if $point == motogp {

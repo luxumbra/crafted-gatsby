@@ -1,15 +1,15 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
+// import Image from '../components/image'
 import SEO from '../components/seo'
 import ProjectSummary from '../components/projects/ProjectSummary'
 
 const PortfolioPage = ({ data }) => (
   <Layout>
     <SEO title="Projects" description="Projects by Crafted" keywords={[`gatsby`, `application`, `react`]} />
-    <section id="projects">
+    <section id="projects" className="intro">
       {data.allMarkdownRemark.edges.map(project => (
         <ProjectSummary  key={ project.node.id } project={project} />
       ))}
@@ -33,6 +33,7 @@ export const projectsQuery = graphql`
             technology
             highlights
           }
+          excerpt(format: PLAIN)
         }
       }
     }
