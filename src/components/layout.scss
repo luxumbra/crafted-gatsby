@@ -55,6 +55,12 @@ body {
                 grid-column-start: 2;
                 grid-column-end: 12;
                 text-align: center;
+
+                .logo {
+                    min-width: 150px;
+                    max-width: 400px;
+                    width: 30%;
+                }
             }
             &#about {
                 text-align: center;

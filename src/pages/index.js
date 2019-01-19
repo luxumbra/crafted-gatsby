@@ -11,7 +11,7 @@ const IndexPage = () => (
     <section id="home">
       <div className="row intro pb-md-3 pb-lg-3 pb-0">
         <div className="col col-12">
-            <img src="./img/logo.png" alt="Crafted logo" />
+            <img className="logo" src="./img/logo.png" alt="Crafted logo" />
         </div>
         </div>
         <div className="row intro pb-2 pb-md-3">
