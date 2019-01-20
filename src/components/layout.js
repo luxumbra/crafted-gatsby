@@ -27,11 +27,9 @@ const Layout = ({ children }) => (
         {/* <PageTransition> */}
 
         <Helmet>
-          {/* <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> */}
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"></script>
-          {/* <script src="https://unpkg.com/feather-icons"></script> */}
-          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js" async></script>
+          <script src="https://unpkg.com/feather-icons" async></script>
+          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async></script>
         </Helmet>
         <Header siteBrand={ data.site.siteMetadata.brand } />
         <div id="content" className="wrapper grid">
