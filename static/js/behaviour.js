@@ -22,7 +22,7 @@
 //   speed: 1000
 // });
 
-feather.replace()
+feather.replace();
 
 const srRevealSlooooow = {
   delay: 1500,
@@ -48,23 +48,23 @@ const srRevealFast = {
   reset: true,
   mobile: true
 }
-ScrollReveal().reveal(".project-summary", srRevealSlow)
-ScrollReveal().reveal("#projects", srRevealFast)
-ScrollReveal().reveal("#home", srRevealSlooow)
-ScrollReveal().reveal("#content + footer", srRevealSlooooow)
+ScrollReveal().reveal(".project-summary", srRevealSlow);
+ScrollReveal().reveal("#projects", srRevealFast);
+ScrollReveal().reveal("#home", srRevealSlooow);
+ScrollReveal().reveal("#content + footer", srRevealSlooooow);
 
-const content = document.getElementById('content')
+const content = document.getElementById('content');
 
-const navbar = document.getElementById('nav')
-const sticky = content.offsetTop
-console.log(sticky)
+const navbar = document.getElementById('nav');
+const sticky = content.offsetTop;
+// console.log(sticky)
 
 function navbarSticky() {
   if(window.pageYOffset > sticky + 100) {
-      navbar.classList.add('sticky')
+      navbar.classList.add('sticky');
   } else {
-      navbar.classList.remove('sticky')
+      navbar.classList.remove('sticky');
   }
 }
-window.onscroll = () => navbarSticky()
-console.log('behaviour.js')
+window.onscroll = () => navbarSticky();
+// console.log('behaviour.js')
