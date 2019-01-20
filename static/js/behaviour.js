@@ -48,10 +48,10 @@ const srRevealFast = {
   reset: true,
   mobile: true
 }
-ScrollReveal().reveal(".project-summary", srRevealSlow);
-ScrollReveal().reveal("#projects", srRevealFast);
-ScrollReveal().reveal("#home", srRevealSlooow);
-ScrollReveal().reveal("#content + footer", srRevealSlooooow);
+ScrollReveal().reveal(".project-summary", srRevealSlow)
+ScrollReveal().reveal("#projects", srRevealFast)
+ScrollReveal().reveal("#home", srRevealSlooow)
+ScrollReveal().reveal("#content + footer", srRevealSlooooow)
 
 const content = document.getElementById('content')
 
@@ -67,4 +67,4 @@ function navbarSticky() {
   }
 }
 window.onscroll = () => navbarSticky()
-console.log('behaviour.js');
+console.log('behaviour.js')
