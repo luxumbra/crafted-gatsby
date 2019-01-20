@@ -37,11 +37,11 @@ const IndexPage = () => (
                 </blockquote>
             </div>
         </div>
-        <div className="row p-2 next-section">
+        {/* <div className="row p-2 next-section">
             <div className="col col-12">
                 <a data-scroll href="#about" className="btn primary-btn pulse" title="More arrow" aria-hidden="true"><span className=""></span></a>
             </div>
-        </div>
+        </div> */}
     </section>
   </Layout>
 )
