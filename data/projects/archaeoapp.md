@@ -1,6 +1,7 @@
 ---
 title: ArchaeoApp
 date: 2018-01-7
+thumbnail: /img/uploads/archaeoapp.jpg
 uri: 'https://archaeoapp.crafted.im'
 role: '100% concept, design, development and DevOps.'
 client: Dave Sayer
