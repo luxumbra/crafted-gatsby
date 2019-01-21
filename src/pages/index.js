@@ -1,5 +1,7 @@
 import React from 'react'
-// import { Link } from 'gatsby'
+
+// import AboutPage from '../pages/about'
+// import PortfolioPage from '../pages/portfolio'
 
 import Layout from '../components/layout'
 // import Image from '../components/image'
@@ -17,7 +19,7 @@ const IndexPage = () => (
         <div className="row intro pb-2 pb-md-3">
             <div className="col col-12">
                 {/* <!-- <h1 className="display-1">crafted</h1> --> */}
-                <span id="typed" className="lead typed-fade-out"></span>
+                <span id="typed" className="lead typed typed-fade-out"></span>
                 {/* <!-- <p>Hand crafted websites made in the Isle of Man</p> --> */}
             </div>
         </div>
@@ -43,6 +45,8 @@ const IndexPage = () => (
             </div>
         </div> */}
     </section>
+    {/* <AboutPage />
+    <PortfolioPage /> */}
   </Layout>
 )
 

@@ -6,7 +6,7 @@ import './ProjectSummary.scss'
 const ProjectSummary = ({ project }) => {
   return (
     <div className="project-summary">
-      {/* <img src="./img/cyn-screen.jpg" alt="" class="project-thumb" /> */}
+      <img src={project.node.frontmatter.thumbnail} alt="" className="project-thumb" />
       <h3><Link to={ project.node.frontmatter.uri }>{ project.node.frontmatter.title }</Link></h3>
       <p>{project.node.excerpt}</p>
       <ul>

@@ -27,6 +27,7 @@ export const projectsQuery = graphql`
             path
             date
             title
+            thumbnail
             uri
             role
             client

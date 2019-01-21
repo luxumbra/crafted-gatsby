@@ -26,6 +26,7 @@
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-remark": "^2.1.19",
     "gatsby-transformer-sharp": "^2.1.8",
+    "jquery": "^3.3.1",
     "netlify-cms": "^2.3.3",
     "node-sass": "^4.11.0",
     "npm": "^6.5.0",
@@ -33,6 +34,8 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
+    "reactstrap": "^7.1.0",
+    "scrollreveal": "^4.0.5",
     "typed.js": "^2.0.9"
   },
   "keywords": [

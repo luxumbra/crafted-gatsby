@@ -35,6 +35,16 @@ h3 {
     font-size: 2rem
   }
 }
+.typed {
+  font-size: 1.2rem;
+  @include bp(superstock) {
+    font-size: 1.6rem;
+  }
+  @include bp(supersport) {
+    font-size: 2rem;
+  }
+}
+
 nav {
   a {
     color: $navLink;

@@ -2,13 +2,13 @@ import React from 'react'
 // import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
-import Nav from './nav'
+import Navi from './navi'
 
 import './header.scss'
 
 const Header = ({ siteBrand }) => (
   // <header>
-    <Nav brandName={ siteBrand } />
+    <Navi brandName={ siteBrand } />
   // </header>
 )
 
