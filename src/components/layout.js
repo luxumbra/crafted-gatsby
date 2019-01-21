@@ -88,7 +88,9 @@ class Layout extends Component {
           navbar.classList.remove('sticky');
       }
     }
-    window.onscroll = () => navbarSticky();
+    if(typeof window !== `undefined`) {
+      window.onscroll = () => navbarSticky();
+    }
   }
   render() {
     return (
