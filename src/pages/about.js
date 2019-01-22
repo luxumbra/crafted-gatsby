@@ -8,7 +8,7 @@ import SEO from '../components/seo'
 const AboutPage = () => (
     <Layout>
         <SEO title="About me" description="Crafted starter" keywords={[`gatsby`, `application`, `react`]} />
-        <section id="about">
+        <section id="about" className="sr-slow load-hidden">
             <div className="intro">
                 <img src="/img/me.jpg" alt="" className="avatar" />
                 <h2>Who am I?</h2>

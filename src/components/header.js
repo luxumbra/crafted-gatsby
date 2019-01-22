@@ -7,9 +7,9 @@ import Navi from './navi'
 import './header.scss'
 
 const Header = ({ siteBrand }) => (
-  // <header>
+  <header>
     <Navi brandName={ siteBrand } />
-  // </header>
+  </header>
 )
 
 Header.propTypes = {

@@ -7,7 +7,7 @@ import SEO from '../components/seo'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" description="Crafted starter" keywords={[`gatsby`, `application`, `react`]} />
-    <section id="home">
+    <section id="home" className="sr-slow load-hidden">
       <div className="row intro pb-md-3 pb-lg-3 pb-0">
         <div className="col col-12">
             <img className="logo" src="./img/logo.png" alt="Crafted logo" />

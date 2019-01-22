@@ -3,7 +3,7 @@ import React from 'react'
 import './footer.scss'
 
 const footer = () => (
-  <footer>
+  <footer className="sr-fast load-hidden">
     <ul>
       <li><a href="#home"><i data-feather="home">Home</i></a></li>
       <li><a href="tel:+44 7507 481812" className="nav-link"><i data-feather="phone">Phone</i> <span className="d-none d-lg-inline">+44 7507 481812</span></a></li>

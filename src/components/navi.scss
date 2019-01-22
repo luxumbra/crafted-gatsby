@@ -26,17 +26,17 @@
     color: rgba(207,20,43, 1);
 }
 .navbar.sticky {
-    background-color: rgba(0, 31, 35, 0.96);
+    background-color: rgba(0, 31, 35, 0.90);
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.6);
     // height: 5.6vh;
     font-size: 1.3rem;
 }
-@media (min-width: 768px) {
+@include bp(supersport) {
     .navbar + header {
         padding-top: 130px;
     }
     .navbar.sticky {
-        height: 8vh;
+        height: $headerHeight;
         font-size: 1.5rem;
     }
 }

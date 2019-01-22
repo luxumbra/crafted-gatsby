@@ -31,7 +31,7 @@ class Layout extends Component {
       mobile: true
     }
     const srRevealSlow = {
-      delay: 400,
+      delay: 600,
       duration: 700,
       reset: true,
       mobile: true
@@ -42,10 +42,13 @@ class Layout extends Component {
       reset: true,
       mobile: true
     }
-    ScrollReveal().reveal(".project-summary", srRevealSlow);
-    ScrollReveal().reveal("#projects", srRevealFast);
-    ScrollReveal().reveal("#home", srRevealSlooow);
-    ScrollReveal().reveal("#content + footer", srRevealSlooooow);
+    const srRevealOnce = {
+      reset: false
+    }
+    ScrollReveal().reveal(".sr-fast", srRevealFast);
+    ScrollReveal().reveal(".sr-slow", srRevealSlow);
+    ScrollReveal().reveal(".sr-really-slow", srRevealSlooooow);
+    ScrollReveal().reveal(".sr-once", srRevealOnce);
 
     if(typeof window !== `undefined`) {
       // we need to check if `window` is defined when building the site so not to break the build

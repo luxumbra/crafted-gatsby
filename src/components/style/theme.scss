@@ -1,5 +1,11 @@
 @import './variables.scss';
-
+html {
+  &.sr {
+    .load-hidden {
+      visibility: hidden;
+    }
+  }
+}
 body {
   color: $white;
   font-size: 10px;
