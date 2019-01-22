@@ -18,34 +18,6 @@ class Layout extends Component {
 
   componentDidMount () {
 
-    /* typed effect */
-    const typedEl = document.getElementById('typed')
-
-    const typedOptions = {
-      strings: [
-          "Web development^1000",
-          "Web design^1000",
-          "Ecommerce ^1000",
-          "Hand crafted websites^700 made in the Isle of Man^400."],
-      typeSpeed: 50,
-      backDelay: 200,
-      fadeOut: false,
-      loop: false,
-      loopCount: Infinity
-    }
-    if(typedEl){
-      const typed = new Typed('#typed', typedOptions)
-    }
-
-    // var scroll = new SmoothScroll('a[href*="#"]', {
-    //   easing: 'easeInOutQuad',
-    //   updateURL: true,
-    //   popstate: true,
-    //   speed: 1000
-    // });
-
-    feather.replace();
-
     const srRevealSlooooow = {
       delay: 1500,
       duration: 1000,
@@ -75,20 +47,50 @@ class Layout extends Component {
     ScrollReveal().reveal("#home", srRevealSlooow);
     ScrollReveal().reveal("#content + footer", srRevealSlooooow);
 
-    const content = document.getElementById('content');
-
-    const navbar = document.getElementById('nav');
-    const sticky = content.offsetTop;
-    // console.log(sticky)
-
-    function navbarSticky() {
-      if(window.pageYOffset > sticky + 100) {
-          navbar.classList.add('sticky');
-      } else {
-          navbar.classList.remove('sticky');
-      }
-    }
     if(typeof window !== `undefined`) {
+      // we need to check if `window` is defined when building the site so not to break the build
+      // https://www.gatsbyjs.org/docs/debugging-html-builds/
+
+      /* typed effect */
+      const typedEl = document.getElementById('typed')
+      const typedOptions = {
+        strings: [
+            "Web development^1000",
+            "Web design^1000",
+            "Ecommerce ^1000",
+            "Hand crafted websites^700 made in the Isle of Man^400."],
+        typeSpeed: 50,
+        backDelay: 200,
+        fadeOut: false,
+        loop: false,
+        loopCount: Infinity
+      }
+      if(typedEl){
+        const typed = new Typed('#typed', typedOptions)
+      }
+
+      // var scroll = new SmoothScroll('a[href*="#"]', {
+      //   easing: 'easeInOutQuad',
+      //   updateURL: true,
+      //   popstate: true,
+      //   speed: 1000
+      // });
+
+      feather.replace();
+
+      // sticky nav bar.
+      const content = document.getElementById('content');
+      const navbar = document.getElementById('nav');
+      const sticky = content.offsetTop;
+      // console.log(sticky)
+
+      function navbarSticky() {
+        if(window.pageYOffset > sticky + 100) {
+            navbar.classList.add('sticky');
+        } else {
+            navbar.classList.remove('sticky');
+        }
+      }
       window.onscroll = () => navbarSticky();
     }
   }
