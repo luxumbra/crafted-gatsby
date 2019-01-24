@@ -125,35 +125,6 @@ class Layout extends Component {
   }
 }
 
-// const Layout = ({ children }) => (
-//   <StaticQuery
-//     query={graphql`
-//       query SiteTitleQuery {
-//         site {
-//           siteMetadata {
-//             brand
-//             title
-//           }
-//         }
-//       }
-//     `}
-//     render={data => (
-//       <>
-//         {/* <PageTransition> */}
-//         <Header siteBrand={ data.site.siteMetadata.brand } />
-//         <div id="content" className="wrapper grid">
-//           {children}
-//         </div>
-//         <Footer />
-//         {/* </PageTransition> */}
-
-//         <script src="/js/behaviour.js" defer></script>
-//       </>
-//     )}
-//   />
-
-// )
-
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
